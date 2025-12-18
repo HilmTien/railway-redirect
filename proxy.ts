@@ -6,7 +6,7 @@ export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
 
   // Define your target hostname
-  const targetHost = "it1901-itp-production-4164.up.railway.app";
+  const targetHost = "it1901-itp-production.up.railway.app";
 
   // Construct new URL
   const redirectUrl = new URL(`https://${targetHost}${pathname}${search}`);
